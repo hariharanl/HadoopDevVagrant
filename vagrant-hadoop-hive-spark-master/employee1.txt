@@ -1,0 +1,11 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS employee(
+  employee_id INT,
+  FirstName STRING,
+  LastName STRING,    
+  exp STRING,
+  Major STRING)
+  COMMENT 'Employee Names'
+  ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY ','
+  STORED AS TEXTFILE
+  LOCATION '/user/vectorsoft/hiveingestion/'
