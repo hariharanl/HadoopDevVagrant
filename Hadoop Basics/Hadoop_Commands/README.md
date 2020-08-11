@@ -1,3 +1,5 @@
+Hadoop Commands
+===============
 -ls <path>
 Lists the contents of the directory specified by path, showing the names, permissions, owner, size and modification date for each entry.
 -lsr <path>
@@ -51,3 +53,30 @@ Sets the owning user and/or group for files or directories identified by path...
 Sets the owning group for files or directories identified by path.... Sets group recursively if -R is specified.
 -help <cmd-name>
 Returns usage information for one of the commands listed above. You must omit the leading '-' character in cmd.
+
+
+Copy from local file to hdfs
+============================
+hdfs dfs -put /vagrant/data/star2002-full.csv /user/vscript/
+
+Command to see blocks and replication
+=====================================
+
+  * hadoop fsck / -files -blocks -locations
+  * hadoop fsck /user/vscript/star2002-full.csv -files -blocks -locations
+  * hdfs getconf -confKey dfs.blocksize
+
+** change the default block size in hdfs-site.xml **
+$HADOOP_HOME/conf/hdfs-site.xml
+<property>
+  <name>dfs.block.size</name>
+  <value>134217728</value>
+  128*1024*1024
+</property...
+
+Command to see Hadoop jobs running 
+==================================
+```
+ps -ef | grep hadoop | grep -P  'namenode|datanode|tasktracker|jobtracker'
+jps
+```
