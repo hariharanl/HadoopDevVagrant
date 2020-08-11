@@ -1,5 +1,6 @@
 Hadoop Commands
 ===============
+```
 -ls <path>
 Lists the contents of the directory specified by path, showing the names, permissions, owner, size and modification date for each entry.
 -lsr <path>
@@ -53,7 +54,7 @@ Sets the owning user and/or group for files or directories identified by path...
 Sets the owning group for files or directories identified by path.... Sets group recursively if -R is specified.
 -help <cmd-name>
 Returns usage information for one of the commands listed above. You must omit the leading '-' character in cmd.
-
+```
 
 Copy from local file to hdfs
 ============================
