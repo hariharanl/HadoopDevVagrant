@@ -9,12 +9,19 @@ Now we have to write a map reduce code to find out * all phone numbers who are m
 The data is coming in log files and looks like as shown below.
 
 FromPhoneNumber|ToPhoneNumber|CallStartTime|CallEndTime|STDFlag
+
 9665128505|8983006310|2015-03-01 09:08:10|2015-03-01 10:12:15|1
+
 9665128505|8983006310|2015-03-01 07:08:10|2015-03-01 08:12:15|0
+
 9665128505|8983006310|2015-03-01 09:08:10|2015-03-01 09:12:15|1
+
 9665128505|8983006310|2015-03-01 09:08:10|2015-03-01 10:12:15|0
+
 9665128506|8983006310|2015-03-01 09:08:10|2015-03-01 10:12:15|1
+
 9665128507|8983006310|2015-03-01 09:08:10|2015-03-01 10:12:15|1
+
 
 First of all we need to understand the data, depending upon the output we are expecting, we need to write a mapper class which would emit FromPhoneNumber and Duration of STD Call intermediate key value pairs. To make it simple to remember the data sequence, let's create a constants class as shown below
 
