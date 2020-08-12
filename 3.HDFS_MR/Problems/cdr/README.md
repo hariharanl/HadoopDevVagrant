@@ -4,7 +4,7 @@ Problem Statement - Call Data Record
 
 A Telecom company keeps records for its subscribers in specific format. Consider following format
 FromPhoneNumber|ToPhoneNumber|CallStartTime|CallEndTime|STDFlag
-Now we have to write a map reduce code to find out * all phone numbers who are making more than 60 mins of STD calls. * Here if STD Flag is 1 that means it was as STD Call. STD is call is call which is made outside of your state or long distance calls. By indentifying such subscribers, telcom company wants to offer them STD(Long Distance) Pack which would efficient for them instead spending more money without that package.
+Now we have to write a map reduce code to find out **all phone numbers who are making more than 60 mins of STD calls.** Here if STD Flag is 1 that means it was as STD Call. STD is call is call which is made outside of your state or long distance calls. By indentifying such subscribers, telcom company wants to offer them STD(Long Distance) Pack which would efficient for them instead spending more money without that package.
 
 The data is coming in log files and looks like as shown below.
 ```

@@ -2,20 +2,20 @@ Problem Statement - Online Radio
 ================================
 XYZ.com is an online music website where users listen to various tracks, the data gets collected like shown below. Write a map reduce program to get following stats
 
-  * Number of unique listeners
-  * Number of times the track was shared with others
-  * Number of times the track was listened to on the radio
-  * Number of times the track was listened to in total
-  * Number of times the track was skipped on the radio
+  * **Number of unique listeners**
+  * **Number of times the track was shared with others**
+  * **Number of times the track was listened to on the radio**
+  * **Number of times the track was listened to in total**
+  * **Number of times the track was skipped on the radio**
   
 The data is coming in log files and looks like as shown below.
-
+```
 UserId|TrackId|Shared|Radio|Skip
 111115|222|0|1|0
 111113|225|1|0|0
 111117|223|0|1|1
 111115|225|1|0|0
-
+```
 Find out unique listeners per track.
 
 First of all we need to understand the data, here the first column is UserId and the second one is Track Id. 
