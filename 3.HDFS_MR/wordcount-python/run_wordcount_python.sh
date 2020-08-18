@@ -1,0 +1,1 @@
+hadoop jar /usr/hdp/2.6.2.0-205/hadoop-mapreduce/hadoop-streaming.jar -file mapper.py -mapper mapper.py -file reducer.py  -reducer reducer.py  -input $1/* -output $2
