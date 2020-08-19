@@ -1,0 +1,12 @@
+ASSIGNMENT 2.1
+
+TASK1: To create a directory under /user/vscript
+
+TASK2: Create a file under directory /user/vscript/hadoop, with name word-count.txt
+and whatever data is type on screen should append to this file.
+ 
+TASK3: Create a file max-temp.txt in local FS , put some records and move the file in hdfs
+under directory /user/vscript/hadoop
+
+TASK4: To change the permission of the file max-temp.txt, such that only the owner and
+group members have full control over the file
