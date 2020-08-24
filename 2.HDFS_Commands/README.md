@@ -54,6 +54,17 @@ Sets the owning user and/or group for files or directories identified by path...
 Sets the owning group for files or directories identified by path.... Sets group recursively if -R is specified.
 -help <cmd-name>
 Returns usage information for one of the commands listed above. You must omit the leading '-' character in cmd.
+
+appendToFile
+Usage: hdfs dfs -appendToFile <localsrc> ... <dst>
+
+Append single src, or multiple srcs from local file system to the destination file system. Also reads input from stdin and appends to destination file system.
+
+hdfs dfs -appendToFile localfile /user/hadoop/hadoopfile
+hdfs dfs -appendToFile localfile1 localfile2 /user/hadoop/hadoopfile
+hdfs dfs -appendToFile localfile hdfs://nn.example.com/hadoop/hadoopfile
+hdfs dfs -appendToFile - hdfs://nn.example.com/hadoop/hadoopfile Reads the input from stdin.
+
 ```
 
 Copy from local file to hdfs
